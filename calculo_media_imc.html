@@ -1,0 +1,49 @@
+<meta charset="UTF-8">
+
+<h1>Programa calculo IMC</h1>
+
+<script>
+
+	function breakLine() {
+
+		document.write("<br>");
+		document.write("<br>");
+		document.write("<br>");
+
+	}
+
+	function print(argument) {
+
+		document.write(argument);
+		breakLine();
+		
+	}
+	//rev.1.1
+	function calculateIMC(weight, heigth) {//Paso de parametros
+
+		return (weight/(heigth*heigth));	//proceso y retorno de un valor
+
+	}
+
+	print("El promedio de imc de Juan, Pedro y Jose es: " + (calculateIMC(72,1.75)+calculateIMC(105,1.95)+calculateIMC(89,1.65))/3);
+
+	//rev.1.0
+	/*function calculateIMC(weight, height){//recibe parametros (input)
+
+		imc = weight/(height*height);//procesa
+		breakLine();
+		return(imc); // (output) La funcion devuelve algo, no es bueno que la funcion de vuelva una accion como el "print", sino que 	devuelva un valor.	
+	}
+	
+	var imcJuan = calculateIMC(72,1.75);
+	var imcPedro = calculateIMC(105,1.95);
+	var imcJose = calculateIMC(89,1.65);
+	//Calculo IMC peso/altura al cuadrado.
+	//var weight = 72;
+	//var height = 1.75;
+	//var imc = weight/(height*height);
+	//print("El indice de masa corporal de Gino es: " + imc);
+	print("El promedio de imc de Juan, Pedro y Jose es: " + (imcJuan+imcJose+imcPedro)/3);*/
+
+	
+</script>

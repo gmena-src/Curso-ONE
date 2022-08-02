@@ -1,0 +1,52 @@
+<meta charset="UTF-8">
+
+
+<h1>Ejercicio Juego de Azar</h1>
+
+<script>
+	//Salto de linea
+	function breakLine() {
+
+		document.write("<br>");
+		document.write("<br>");
+		document.write("<br>");
+
+	}
+	//Imprime en pantalla
+	function print(argument) {
+
+		document.write(argument);
+		breakLine();
+	}
+	//Funcion azar
+	function sorteo(n) { 
+            return Math.round(Math.random()*n);
+        } 
+	
+
+	var incognita = sorteo(1000);
+	var numeroElegido = parseInt(prompt("Ingresa un numero"));
+
+	if(numeroElegido==incognita) {
+		print("Usted gano");
+	}
+	if (numeroElegido>incognita) {
+		print("Numero equivocado, el numero que usted eligio es mayor, el numero era "+incognita);
+	}
+	else {
+		print("Numero equivocado, el numero que usted eligio es menor, el numero era "+incognita);
+	}
+	/*    
+	VARIANTE
+	var incognita = Math.round(Math.random()*10);
+    var numeroElegido = parseInt(prompt("Ingrese un número entre 0-10"))
+
+    if (incognita == numeroElegido){
+        print("usted acertó")
+    }
+
+    else {
+        print("usted erró, el número pensado era " + incognita)    
+    }*/
+
+</script>

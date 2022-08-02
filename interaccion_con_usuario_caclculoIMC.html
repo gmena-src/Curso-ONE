@@ -1,0 +1,76 @@
+<meta charset="UTF-8">
+
+<h1>Programa calculo IMC</h1>
+
+<script>
+	//Salto de linea
+	function breakLine() {
+
+		document.write("<br>");
+		document.write("<br>");
+		document.write("<br>");
+
+	}
+	//Imprime en pantalla
+	function println(argument) {
+
+		document.write(argument);
+		breakLine();
+		
+	}
+	//Calculo de IMC
+	function calculateIMC(weight, heigth) {//Paso de parametros
+
+		return (weight/(heigth*heigth));	//proceso y retorno de un valor
+
+	}
+
+	//Pop-up Indica al usuario lo que debe hacer
+	alert("Para calcular el indice de masa corporal complete los datos a continuacion");
+
+	//Se pide los datos correspondientes al usuario
+	var name = prompt("Ingrese su nombre");
+
+	var weight = prompt(name + " ingrese su peso en Kilogramos");
+
+	var heigth = prompt (name + " ingrese su altura en metros Ejemplo: 1.75m");
+
+	var imc = calculateIMC(weight,heigth);
+	
+	//Se imprime en pantalla el resultado
+	println("El indice de masa corporal de " + name + ": "+ imc +".");
+
+	//Condicionales con operadores 
+	if (imc < 18.5){
+
+		println("Segun la Organizacion Mundial de la salud considerado Bajo peso.");
+	}
+	//Evaluacion de condicion anidada
+	if (imc > 18.5){
+
+		if(imc < 24.9){
+
+			println("Segun la Organizacion Mundial de la salud considerado Peso normal.");
+		}
+
+	}
+	//Unica condicion doble en una misma sentencia
+ 	
+ 	if (imc > 25 && imc < 29.9){
+
+ 		println("Segun la Organizacion Mundial de la salud considerado Pre-obesidad o Sobrepeso.");
+ 	}
+ 	if (imc > 30 && imc < 34.5){
+
+ 		println("Segun la Organizacion Mundial de la salud considerado Obesidad clase I.");
+ 	}
+ 	if (imc > 35 && imc < 39.9){
+
+ 		println("Segun la Organizacion Mundial de la salud considerado Obesidad clase II.");
+ 	}
+ 	if (imc > 40){
+
+ 		println("Segun la Organizacion Mundial de la salud considerado Obesidad clase III.");
+ 	}
+		
+</script>

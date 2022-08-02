@@ -1,0 +1,50 @@
+<meta charset="UTF-8">
+
+<h1>test azar</h1>
+
+<script>
+
+    function breakLine() {
+
+        document.write("<br>");
+        document.write("<br>");
+        document.write("<br>");
+
+    }
+    //Imprime en pantalla
+    function print(argument) {
+
+        document.write(argument);
+        breakLine();
+    }
+    //Funcion azar
+    function sortearNumero(n) { 
+            return Math.abs(Math.round(Math.random()*10));
+    }
+    // funciones omitidas saltarLinea, imprimir, sortearNumero
+
+    var numeroPensado = sortearNumero();
+
+    var numeroLanzado = parseInt(prompt("Ingrese un número entre 0-10: "));
+
+    var contador =5 ;
+        
+        //Para salir del Bucle la condicion tiene que ser true;
+    
+
+    if (contador>=1) {
+
+        while(numeroPensado!=numeroLanzado) {
+
+        print("Intentalo nuevamente restan " + contador + " intentos." + " el numero pensado era "+numeroPensado);
+        numeroLanzado = parseInt(prompt("Ingrese un número entre 0-10: "));
+        print("¡Se acabó, vos erraste!");
+        contador = contador -1;
+
+        }   
+    } else {
+        print("Se acabaron tus intentos el numero pensado era "+numeroPensado);
+    }
+    
+    
+</script>

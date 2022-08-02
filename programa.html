@@ -1,0 +1,88 @@
+<meta charset="UTF-8">
+
+
+
+<script>
+
+	function breakLine() {//las funciones siempre van al comienzo
+						  //es buena practica que el nombre sea un verbo ya que provocara una accion.
+		document.write("<br>");
+		document.write("<br>");
+		document.write("<br>");
+		document.write("<br>");
+
+	}
+
+	function print(frase){
+
+		document.write(frase);//esta funcion se creo para sustituir "document.write". Esta funcion recibe un parametro de entrada que es una "frase".
+		document.write("<br>");
+		document.write("<br>");
+		document.write("<br>");//<--------Agergando los saltos de linea en la funcion imprimir, con esto ahorramos lineas de codigo y aprovechamos al maximo las funciones.
+	}
+
+
+	//Siempre se deja un espacio arriba y abajo del cierre script
+	var year = 2022; //'var' se utiliza para declarar una variable
+	
+	//var breakLine = "<br><br><br><br>" //Optimizamos el codigo, creando una variable accesorio para los saltos de linea, esto hace mas sencillo el trabajo ya que modificamos en un lugar solo.
+	
+	print("Juan tiene: " + (year-2000) + " años");		
+	
+	//document.write(breakLine);
+	
+	//breakLine(); //<---Sustituimos 	document.write(breakLine) por una funcion.
+	
+	print("Pedro tiene: " + (year-1995) + " años");		
+	
+	//document.write(breakLine);
+	
+	//breakLine();
+	
+	print("Carlos tiene: " + (year-2005) + " años");
+	
+	//breakLine();
+	
+	/*year = 2030;	//con esto demostramos que el programa es secuencial de 				arriba hacia abajo, en este punto la <year toma el valor 				 de 2030
+				    //Las variables se declaran al comienzo y cuando hacemos una actualizacion de la misma solo se la declara con el nombre y la asignacion ejemplo linea year=2030
+	document.write("<br>");
+	document.write("<br>");
+	document.write("<br>");
+	document.write("<br>");		
+
+	document.write("Jimena tiene: " + (year-2010) + " años");		
+	document.write("<br>");
+	document.write("<br>");
+
+	document.write("Paola tiene: " + (year-1995) + " años");		
+	document.write("<br>");
+	document.write("<br>");
+
+	document.write("Laura tiene: " + (year-2005) + " años");		
+	document.write("<br>");
+	document.write("<br>");
+
+	var edadJimena = 10;
+	var edadPaola = 25;
+	var edadLaura = 15;
+
+	var nombre1 = "Jimena";
+	var nombre2 = "Paola";
+	var nombre3 = "Laura";
+
+	var promedio = (edadJimena+edadPaola+edadLaura)/3;
+
+	document.write("El promedio de las edades de: " + nombre1 + ", " + nombre2 + " y " + nombre3 + " es " + Math.round(promedio)+".");		
+	document.write("<br>");
+	document.write("<br>");
+
+
+    var EDAD1 = 10;
+    var EDAD2 = "20";
+    var EDAD3 = 12;
+    document.write("La media de las edades es <br>");
+    document.write( (EDAD1 + EDAD2 + EDAD3)/3); la variable EDAD2 al ser de tipo String probocara la concatenacion total y provocara un error en el resultado (102012 / 3)*/
+
+</script>
+
+

@@ -1,0 +1,50 @@
+<meta charset="UTF-8">
+
+<h1>Programa Azar Usando Bucle While</h1>
+
+
+<script>
+    //Salto de linea
+    function breakLine() {
+
+        document.write("<br>");
+        document.write("<br>");
+        document.write("<br>");
+
+    }
+    //Imprime en pantalla
+    function print(argument) {
+
+        document.write(argument);
+        breakLine();
+    }
+    //Funcion azar
+    function randomNumber() {
+            return Math.round(Math.random()*10);
+    } 
+
+    var number = randomNumber();
+
+    var userNumber = parseInt(prompt("Ingrese un número entre 0-10: "));
+    
+    
+    if (number!=numeroLanzado) {
+            
+        var cont=1;
+            
+        while(cont<=5 || number==userNumber) {
+
+        alert("Fallaste restan " + (5-(cont) + " intentos"));
+        userNumber = parseInt(prompt("Ingrese un número entre 0-10: "));
+        cont=cont+1;
+
+        }
+
+        print("Se te acabaron las oportunidades lo siento. Presiona F5 para intentarlo nuevamente");
+
+    }else {
+
+            print("Ganaste pensamos en el mismo numero "+number);
+    }   
+    
+</script>

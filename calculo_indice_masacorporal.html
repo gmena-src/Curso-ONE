@@ -1,0 +1,39 @@
+<meta charset="UTF-8">
+
+<h1>Programa calculo IMC</h1>
+
+<script>
+
+	function breakLine() {
+
+		document.write("<br>");
+		document.write("<br>");
+		document.write("<br>");
+
+	}
+
+	function print(argument) {
+
+		document.write(argument);
+		breakLine();
+		
+	}
+
+	function calculateIMC(weight, height, name){
+
+		imc = weight/(height*height);
+		print("El imc de " + name + " es: " + imc + ".");
+		breakLine();
+
+	}
+	//OPTIMIZANDO CODIGO UTILIZANDO DIFERENTES MANERAS Y REDUCIENDO LINEAS DE CODIGO.
+
+	//Calculo IMC peso/altura al cuadrado.
+	//var weight = 72;
+	//var height = 1.75;
+	//var imc = weight/(height*height);
+	//print("El indice de masa corporal de Gino es: " + imc);
+
+	calculateIMC(72,1.75,"Gino");
+
+</script>

@@ -1,0 +1,41 @@
+<meta charset="UTF-8">
+
+<script>
+    function saltarLinea() {
+        document.write("<br>");
+    }
+
+    function println(frase) {
+        document.write(frase);
+        saltarLinea();
+    }
+
+    var edad = parseInt(prompt("¿Cuál es tu edad?"));
+    var tieneLicencia = prompt("¿Tienes licencia? Responde S o N");
+
+    //OPTIMO
+    if ((edad>=18)&&(tieneLicencia=="S")) {
+        println("Cumples con todos los requisitos para conducir el vehiculo");
+    }
+    else {
+        println("No puedes conducir");
+    }
+    
+    //VARIANTE
+    /*if (edad >= 18) {
+
+        if (tieneLicencia=="S") {
+
+            println("Eres mayor de edad tienes "+edad+" años de edad y tienes licencia de conducir.")
+            println("Puedes conducir");
+        } else {
+            println("Eres mayor de edad pero no tienes licencia de conducir por lo tanto no puedes circular en vehiculos.")
+        }
+    } 
+    else {
+
+        println("Eres menor de edad por lo tanto no puedes sacar Licencia de condicir")
+
+    }*/
+
+</script>

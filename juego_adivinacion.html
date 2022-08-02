@@ -1,0 +1,34 @@
+<meta charset="UTF-8">
+
+<h1>Programa Juego de azar</h1>
+
+<script>
+	//Salto de linea
+	function breakLine() {
+
+		document.write("<br>");
+		document.write("<br>");
+		document.write("<br>");
+
+	}
+	//Imprime en pantalla
+	function println(argument) {
+
+		document.write(argument);
+		breakLine();
+		
+	}
+
+	var incognita = Math.round(Math.random()*10);
+	var numeroLanzado = parseInt(prompt("Ingrese un numero entre 0 y 10"));
+
+	
+	if (incognita == numeroLanzado) {
+		println("Usted acertó");
+	}
+
+	else {
+		println("Numero equivocado el numero lanzado era " + incognita);	
+	}
+		
+</script>
