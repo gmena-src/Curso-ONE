@@ -1,0 +1,39 @@
+<meta charset="UTF-8">
+
+<h1>Calcular tablas con Bucle Determinado For</h1>
+
+<script>
+	//Salto de linea
+	function breakLine() {
+
+		document.write("<br>");
+		document.write("<br>");
+		document.write("<br>");
+
+	}
+	//Imprime en pantalla
+	function println(argument) {
+
+		document.write(argument);
+		breakLine();
+		
+	}
+	
+	var tabla = parseInt(prompt(println("Ingrese el numero de la tabla que desea calcular.")));
+
+	println("La tabla que usted desea calcular es la del " + tabla +".");
+
+	for (var multiplicador = 1;multiplicador<=10; multiplicador++) {
+
+		println(tabla*multiplicador);
+
+	}
+	/*
+	El bucle for es un bucle determinado. Los bucles determinados son aquellos en los que se sabe 
+	de antemano cuantas veces se va a ejecutar el código que hay en su interior. 
+	Consta de 3 partes fundamentales, 
+	for(valor_inicial;valor_final;incremento_o_decremento){
+		ejecucion;
+	}
+	*/
+</script>

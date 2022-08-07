@@ -1,0 +1,40 @@
+<meta charset="UTF-8">
+
+<h1>Calcular Media Edades</h1>
+
+<script>
+	//Salto de linea
+	function breakLine() {
+
+		document.write("<br>");
+		document.write("<br>");
+		document.write("<br>");
+	}
+	//Imprime en pantalla
+	function println(argument) {
+
+		document.write(argument);
+		breakLine();
+		
+	}
+	
+	var miembros= parseInt(prompt("Ingrese la cantidad de miembros de su familia"));
+	var contador=1;
+	var totalEdades=0;
+
+	while(contador<=miembros){
+
+		edades=parseInt(prompt("Ingresa la edad del familiar"));
+		totalEdades=totalEdades+edades;
+		contador++;
+
+	}
+	mediaEdades = totalEdades/miembros;
+	println("La media del total de las edades ingresadas es "+ mediaEdades+".");
+	println("Fin del programa");
+
+	/*
+	TIPS
+	Es muy importante inicializar las variables fuera del Loop.s
+	*/
+</script>

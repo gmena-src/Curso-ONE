@@ -21,25 +21,25 @@
     function sortearNumero(n) { 
             return Math.abs(Math.round(Math.random()*10));
     }
-    // funciones omitidas saltarLinea, imprimir, sortearNumero
+  
 
     var numeroPensado = sortearNumero();
 
     var numeroLanzado = parseInt(prompt("Ingrese un número entre 0-10: "));
 
-    var contador =5 ;
+    var intentos =5 ;
         
         //Para salir del Bucle la condicion tiene que ser true;
     
 
-    if (contador>=1) {
+    if (intentos>=1) {
 
         while(numeroPensado!=numeroLanzado) {
 
-        print("Intentalo nuevamente restan " + contador + " intentos." + " el numero pensado era "+numeroPensado);
+        print("Intentalo nuevamente restan " + intentos + " intentos." + " el numero pensado era "+numeroPensado);
         numeroLanzado = parseInt(prompt("Ingrese un número entre 0-10: "));
         print("¡Se acabó, vos erraste!");
-        contador = contador -1;
+        intentos = intentos -1;
 
         }   
     } else {

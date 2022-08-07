@@ -1,0 +1,43 @@
+<meta charset="UTF-8">
+
+<h1>Calcular tablas con Bucle Indeterminado While</h1>
+
+<script>
+	//Salto de linea
+	function breakLine() {
+
+		document.write("<br>");
+		document.write("<br>");
+		document.write("<br>");
+
+	}
+	//Imprime en pantalla
+	function println(argument) {
+
+		document.write(argument);
+		breakLine();
+		
+	}
+	
+	var tabla = parseInt(prompt(println("Ingrese el numero de la tabla que desea calcular.")));
+	
+	var multiplicador = 1;
+
+	println("La tabla que usted desea calcular es la del " + tabla +".");
+
+	while(multiplicador<=10){
+
+			println(tabla*multiplicador);
+
+			multiplicador=multiplicador+1;
+
+	}
+	
+/*
+While
+En JavaScript tenemos como sentencia de bucle indeterminado, el bucle while. 
+El bucle while ejecuta una sentencia mientras sea cierta una condición a evaluar.
+Los bucles while hacen la comprobación de la condición al principio, antes de entrar en el bucle. 
+Quiere decir que si la condición no se cumple, el bucle no se ejecutará nunca.
+*/
+</script>
