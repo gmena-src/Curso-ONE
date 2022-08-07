@@ -1,0 +1,53 @@
+<meta charset="UTF-8">
+
+<h1>Programa Juego de azar v.2.0</h1>
+
+<script>
+	//Salto de linea
+	function breakLine() {
+
+		document.write("<br>");
+		document.write("<br>");
+		document.write("<br>");
+
+	}
+	//Imprime en pantalla
+	function println(argument) {
+
+		document.write(argument);
+		breakLine();
+		
+	}
+
+	var intentos = 3;
+	var contador = 1;
+	var numeroPensado = Math.round(Math.random()*10);
+	var intento=1;
+	
+	while(contador<=intentos){
+		
+		var numeroLanzador= parseInt(prompt("Ingrese un numero entre 0-10"));
+
+		if (numeroPensado==numeroLanzador){
+
+			println("ACERTASTE en el intento " + intento + " el numero pensado era " +numeroPensado);
+			break;
+			
+			//Sirve para forzar la salida si es que un tenemos mas intentos, sino el program sigue dentro del loop hasta consumir todos los intentos.
+		}
+		else {
+			alert("FALLASTE");	
+		}
+		intento++;
+		contador++;//Importante dejar a lo ultimo el contador.
+		
+	}
+	if (numeroPensado!=numeroLanzador) {
+		println("El numero pensado era " + numeroPensado+".");
+	}
+	
+
+	println("El juego a terminado!!")
+
+</script>
+
